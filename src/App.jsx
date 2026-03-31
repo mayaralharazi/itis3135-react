@@ -5,7 +5,6 @@ import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import Contract from "./pages/Contract";
 import FCC from "./pages/FCC";
-
 import Survey from "./pages/Survey";
 import Cards from "./pages/Cards";
 import Inventory from "./pages/Inventory";
@@ -17,14 +16,15 @@ import Hobby from "./pages/Hobby";
 function App() {
   return (
     <>
-      <Navbar />
-      <h1>Mayar Alharazi's Jolly Dolphin ~ ITIS 3135</h1>
+      <header>
+        <h1>Mayar Alharazi's Jolly Dolphin ~ ITIS 3135</h1>
+        <Navbar />
+      </header>
 
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/contract" element={<Contract />} />
         <Route path="/fcc" element={<FCC />} />
-
         <Route path="/survey" element={<Survey />} />
         <Route path="/cards" element={<Cards />} />
         <Route path="/inventory" element={<Inventory />} />
