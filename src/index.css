@@ -5,12 +5,14 @@ body {
   margin: 0;
 }
 
+/* HEADER */
 header {
   background-color: #f472b6;
   color: white;
   padding: 16px 24px;
 }
 
+/* TITLE */
 h1 {
   font-family: "Trebuchet MS", sans-serif;
   text-align: center;
@@ -18,6 +20,7 @@ h1 {
   letter-spacing: 1px;
 }
 
+/* NAVBAR */
 nav {
   text-align: center;
   margin-top: 10px;
@@ -32,8 +35,10 @@ nav a {
 
 nav a:hover {
   text-decoration: underline;
+  color: #fff7c2;
 }
 
+/* MAIN CARD */
 main {
   max-width: 700px;
   margin: 40px auto;
@@ -43,6 +48,7 @@ main {
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
 }
 
+/* HEADINGS */
 h2 {
   color: #db2777;
   text-align: center;
@@ -55,6 +61,7 @@ li {
   font-size: 1.05em;
 }
 
+/* FOOTER */
 footer {
   background-color: #fff4b0;
   padding: 20px;
