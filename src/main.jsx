@@ -5,7 +5,7 @@ import App from "./App";
 
 // ✅ CSS files
 import "./index.css";
-import "./App.css";
+
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <BrowserRouter>
