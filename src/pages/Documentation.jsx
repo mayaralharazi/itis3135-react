@@ -1,13 +1,18 @@
+import PageTitle from "../components/PageTitle";
+
 function Documentation() {
-    return (
+  return (
+    <>
+      <PageTitle title="Mayar Alharazi's Jolly Dolphin ~ ITIS 3135 ~ Documentation" />
+
       <main>
         <h2>Documentation</h2>
-  
+
         <p>
           This page explains how the Jolly Dolphin Study Club works. It’s a simple guide for members: how we meet, how we study,
           and how we keep our work organized.
         </p>
-  
+
         <h3>Contents</h3>
         <ul>
           <li><a href="#overview">1. Overview</a></li>
@@ -17,7 +22,7 @@ function Documentation() {
           <li><a href="#file-structure">5. File Structure</a></li>
           <li><a href="#help-etiquette">6. Help Etiquette</a></li>
         </ul>
-  
+
         <section id="overview">
           <h3>1. Overview</h3>
           <p>
@@ -30,7 +35,7 @@ function Documentation() {
             <li>We keep everything organized so it’s easy to submit.</li>
           </ul>
         </section>
-  
+
         <section id="meeting-rules">
           <h3>2. Meeting Rules</h3>
           <p>
@@ -42,13 +47,13 @@ function Documentation() {
             <li>No copying a classmate’s full solution.</li>
           </ul>
         </section>
-  
+
         <section id="study-sprints">
           <h3>3. Study Sprints</h3>
           <p>
             A study sprint is a timed focus session. We normally use a 25/5 cycle: 25 minutes work, then a 5 minute break.
           </p>
-  
+
           <p>Example sprint plan:</p>
           <ol>
             <li>Pick one small task (example: “finish nav bar”).</li>
@@ -57,68 +62,68 @@ function Documentation() {
             <li>Repeat if needed.</li>
           </ol>
         </section>
-  
+
         <section id="debugging-process">
           <h3>4. Debugging Process</h3>
           <p>
             When something breaks, we use a simple “Dolphin Debug” checklist. This helps us fix issues fast and avoid guessing.
           </p>
-  
+
           <ul>
             <li>Read the error message carefully.</li>
             <li>Check spelling (file names, links, tags).</li>
             <li>Validate HTML/CSS.</li>
             <li>Test one change at a time.</li>
           </ul>
-  
+
           <p>Example of a common fix (missing closing tag):</p>
           <pre>
             <code>
-  {`<p>This is a paragraph.
-  </p>`}
+{`<p>This is a paragraph.
+</p>`}
             </code>
           </pre>
-  
+
           <p>Example of linking a CSS file correctly:</p>
           <pre>
             <code>
-  {`<link rel="stylesheet" href="styles/default.css">`}
+{`<link rel="stylesheet" href="styles/default.css">`}
             </code>
           </pre>
         </section>
-  
+
         <section id="file-structure">
           <h3>5. File Structure</h3>
           <p>
             We keep our project files in a clean structure so pages can find the CSS and images correctly.
           </p>
-  
+
           <pre>
             <code>
-  {`itis3135/
-    index.html
-    contract.html
-    survey.html
-    cards.html
-    inventory.html
-    documentation.html
-    product.html
-    styles/
-      default.css`}
+{`itis3135/
+  index.html
+  contract.html
+  survey.html
+  cards.html
+  inventory.html
+  documentation.html
+  product.html
+  styles/
+    default.css`}
             </code>
           </pre>
-  
+
           <p>
             Tip: If a page cannot find the CSS, the most common reason is the file path is wrong.
           </p>
         </section>
-  
+
         <section id="help-etiquette">
           <h3>6. Help Etiquette</h3>
           <p>
             Getting help is encouraged, but we do it in an ethical way. The goal is to learn, not just “get it done.”
           </p>
-  
+
           <ul>
             <li>Share what you tried first.</li>
             <li>Ask for explanation, not copy-paste answers.</li>
@@ -126,7 +131,8 @@ function Documentation() {
           </ul>
         </section>
       </main>
-    );
-  }
-  
-  export default Documentation;
+    </>
+  );
+}
+
+export default Documentation;
