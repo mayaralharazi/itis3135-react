@@ -1,13 +1,18 @@
+import PageTitle from "../components/PageTitle";
+
 function Home() {
-    return (
+  return (
+    <>
+      <PageTitle title="Mayar Alharazi's Jolly Dolphin ~ ITIS 3135 ~ Home" />
+
       <main>
         <h2>Course Home</h2>
-  
+
         <p>
           Welcome to my ITIS 3135 course site. For the Responsive Web Design projects, I used a consistent theme:
           <strong> Jolly Dolphin Study Club</strong>. Each page below matches one of the certification-style projects.
         </p>
-  
+
         <h3>Project Pages</h3>
         <ul>
           <li>Survey — Jolly Dolphin Study Club signup survey.</li>
@@ -16,12 +21,13 @@ function Home() {
           <li>Documentation — technical documentation for how the club works.</li>
           <li>Product — a landing page for club membership.</li>
         </ul>
-  
+
         <p>
           Use the navigation menu at the top to explore each project page.
         </p>
       </main>
-    );
-  }
-  
-  export default Home;
+    </>
+  );
+}
+
+export default Home;
