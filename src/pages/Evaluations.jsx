@@ -1,8 +1,13 @@
+import PageTitle from "../components/PageTitle";
+
 function Evaluations() {
-    return (
+  return (
+    <>
+      <PageTitle title="Mayar Alharazi's Jolly Dolphin ~ ITIS 3135 ~ Website Evaluations" />
+
       <main>
         <h2>CRAP Website Evaluations</h2>
-  
+
         <section>
           <h3>
             <a href="https://www.apple.com" target="_blank" rel="noopener noreferrer">
@@ -16,7 +21,7 @@ function Evaluations() {
             <li><strong>Proximity:</strong> Related items are grouped clearly, improving organization and usability.</li>
           </ul>
         </section>
-  
+
         <section>
           <h3>
             <a href="https://www.lingscars.com" target="_blank" rel="noopener noreferrer">
@@ -31,7 +36,8 @@ function Evaluations() {
           </ul>
         </section>
       </main>
-    );
-  }
-  
-  export default Evaluations;
+    </>
+  );
+}
+
+export default Evaluations;
