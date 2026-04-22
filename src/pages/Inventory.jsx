@@ -1,13 +1,18 @@
+import PageTitle from "../components/PageTitle";
+
 function Inventory() {
-    return (
+  return (
+    <>
+      <PageTitle title="Mayar Alharazi's Jolly Dolphin ~ ITIS 3135 ~ Inventory" />
+
       <main>
         <h2>Inventory</h2>
-  
+
         <p>
           This inventory lists the “study resources” the Jolly Dolphin Club recommends. The status shows what we’ve completed
           and what we’re currently working on.
         </p>
-  
+
         <table>
           <thead>
             <tr>
@@ -18,7 +23,7 @@ function Inventory() {
               <th>Rate</th>
             </tr>
           </thead>
-  
+
           <tbody>
             <tr>
               <td>HTML &amp; CSS Quick Guide</td>
@@ -27,7 +32,7 @@ function Inventory() {
               <td>Read</td>
               <td>★★★</td>
             </tr>
-  
+
             <tr>
               <td>JavaScript Practice Drills</td>
               <td>Study Sprint Team</td>
@@ -35,7 +40,7 @@ function Inventory() {
               <td>In Progress</td>
               <td>★★★</td>
             </tr>
-  
+
             <tr>
               <td>Cyber Safety Basics</td>
               <td>Jolly Dolphin Crew</td>
@@ -43,7 +48,7 @@ function Inventory() {
               <td>To Read</td>
               <td>★★</td>
             </tr>
-  
+
             <tr>
               <td>Interview Warmups</td>
               <td>Career Prep Group</td>
@@ -51,7 +56,7 @@ function Inventory() {
               <td>To Read</td>
               <td>★★</td>
             </tr>
-  
+
             <tr>
               <td>Debugging Checklist</td>
               <td>Debug Buddy</td>
@@ -62,7 +67,8 @@ function Inventory() {
           </tbody>
         </table>
       </main>
-    );
-  }
-  
-  export default Inventory;
+    </>
+  );
+}
+
+export default Inventory;
