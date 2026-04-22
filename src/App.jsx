@@ -16,23 +16,33 @@ import Hobby from "./pages/Hobby";
 
 function App() {
   const location = useLocation();
+  const path = location.pathname;
 
   useEffect(() => {
-    const titles = {
-      "/": "Mayar Alharazi's Jolly Dolphin ~ ITIS 3135 ~ Home",
-      "/contract": "Mayar Alharazi's Jolly Dolphin ~ ITIS 3135 ~ Contract",
-      "/fcc": "Mayar Alharazi's Jolly Dolphin ~ ITIS 3135 ~ FCC",
-      "/survey": "Mayar Alharazi's Jolly Dolphin ~ ITIS 3135 ~ Survey",
-      "/cards": "Mayar Alharazi's Jolly Dolphin ~ ITIS 3135 ~ Cards",
-      "/inventory": "Mayar Alharazi's Jolly Dolphin ~ ITIS 3135 ~ Inventory",
-      "/documentation": "Mayar Alharazi's Jolly Dolphin ~ ITIS 3135 ~ Documentation",
-      "/product": "Mayar Alharazi's Jolly Dolphin ~ ITIS 3135 ~ Product",
-      "/evaluations": "Mayar Alharazi's Jolly Dolphin ~ ITIS 3135 ~ Website Evaluations",
-      "/hobby": "Mayar Alharazi's Jolly Dolphin ~ ITIS 3135 ~ Hobby",
-    };
-
-    document.title = titles[location.pathname] || "Mayar Alharazi's Jolly Dolphin ~ ITIS 3135";
-  }, [location.pathname]);
+    if (path === "/") {
+      document.title = "Mayar Alharazi's Jolly Dolphin ~ ITIS 3135 ~ Home";
+    } else if (path === "/contract") {
+      document.title = "Mayar Alharazi's Jolly Dolphin ~ ITIS 3135 ~ Contract";
+    } else if (path === "/fcc") {
+      document.title = "Mayar Alharazi's Jolly Dolphin ~ ITIS 3135 ~ FCC";
+    } else if (path === "/survey") {
+      document.title = "Mayar Alharazi's Jolly Dolphin ~ ITIS 3135 ~ Survey";
+    } else if (path === "/cards") {
+      document.title = "Mayar Alharazi's Jolly Dolphin ~ ITIS 3135 ~ Cards";
+    } else if (path === "/inventory") {
+      document.title = "Mayar Alharazi's Jolly Dolphin ~ ITIS 3135 ~ Inventory";
+    } else if (path === "/documentation") {
+      document.title = "Mayar Alharazi's Jolly Dolphin ~ ITIS 3135 ~ Documentation";
+    } else if (path === "/product") {
+      document.title = "Mayar Alharazi's Jolly Dolphin ~ ITIS 3135 ~ Product";
+    } else if (path === "/evaluations") {
+      document.title = "Mayar Alharazi's Jolly Dolphin ~ ITIS 3135 ~ Website Evaluations";
+    } else if (path === "/hobby") {
+      document.title = "Mayar Alharazi's Jolly Dolphin ~ ITIS 3135 ~ Hobby";
+    } else {
+      document.title = "Mayar Alharazi's Jolly Dolphin ~ ITIS 3135";
+    }
+  }, [path]);
 
   return (
     <>
