@@ -1,8 +1,13 @@
+import PageTitle from "../components/PageTitle";
+
 function Product() {
-    return (
+  return (
+    <>
+      <PageTitle title="Mayar Alharazi's Jolly Dolphin ~ ITIS 3135 ~ Product" />
+
       <main>
         <h2>Product</h2>
-  
+
         <section>
           <h3>Jolly Dolphin Study Club Membership</h3>
           <p>
@@ -13,7 +18,7 @@ function Product() {
             <a href="#join">Join now</a> | <a href="#features">See features</a> | <a href="#pricing">Pricing</a>
           </p>
         </section>
-  
+
         <section id="features">
           <h3>Features</h3>
           <ul>
@@ -23,7 +28,7 @@ function Product() {
             <li><strong>Friendly Support:</strong> Ask questions and get help with explanations.</li>
           </ul>
         </section>
-  
+
         <section>
           <h3>How it works</h3>
           <ol>
@@ -33,10 +38,10 @@ function Product() {
             <li>Share progress and get feedback.</li>
           </ol>
         </section>
-  
+
         <section id="pricing">
           <h3>Membership Options</h3>
-  
+
           <article>
             <h4>Starter (Free)</h4>
             <ul>
@@ -45,7 +50,7 @@ function Product() {
               <li>Access to club announcements</li>
             </ul>
           </article>
-  
+
           <article>
             <h4>Pro (Student)</h4>
             <ul>
@@ -54,7 +59,7 @@ function Product() {
               <li>Extra practice prompts</li>
             </ul>
           </article>
-  
+
           <article>
             <h4>Team (Study Group)</h4>
             <ul>
@@ -64,26 +69,26 @@ function Product() {
             </ul>
           </article>
         </section>
-  
+
         <section id="join">
           <h3>Join the Club</h3>
           <p>
             Fill this quick form and we will send you the weekly plan.
           </p>
-  
+
           <form action="#" method="post">
             <p>
               <label htmlFor="join-name">Name:</label>
               <br />
               <input id="join-name" name="join-name" type="text" required />
             </p>
-  
+
             <p>
               <label htmlFor="join-email">Email:</label>
               <br />
               <input id="join-email" name="join-email" type="email" required />
             </p>
-  
+
             <p>
               <label htmlFor="membership">Choose a membership:</label>
               <br />
@@ -96,14 +101,15 @@ function Product() {
                 <option value="team">Team (Study Group)</option>
               </select>
             </p>
-  
+
             <p>
               <button type="submit">Submit</button>
             </p>
           </form>
         </section>
       </main>
-    );
-  }
-  
-  export default Product;
+    </>
+  );
+}
+
+export default Product;
