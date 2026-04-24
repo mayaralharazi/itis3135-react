@@ -73,3 +73,36 @@ footer a {
   color: #1e3a8a;
   margin: 0 8px;
 }
+
+/* SLIDESHOW BUTTONS */
+.slide-btn {
+  background-color: #f472b6; /* matches your header pink */
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  margin: 5px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.slide-btn:hover {
+  background-color: #db2777;
+}
+
+.play {
+  background-color: #22c55e;
+}
+
+.play:hover {
+  background-color: #16a34a;
+}
+
+.stop {
+  background-color: #ef4444;
+}
+
+.stop:hover {
+  background-color: #dc2626;
+}
