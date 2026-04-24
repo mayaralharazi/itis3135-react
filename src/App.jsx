@@ -13,6 +13,7 @@ import Documentation from "./pages/Documentation";
 import Product from "./pages/Product";
 import Evaluations from "./pages/Evaluations";
 import Hobby from "./pages/Hobby";
+import Slideshow from "./pages/Slideshow"; // ✅ NEW
 
 function App() {
   const location = useLocation();
@@ -39,6 +40,8 @@ function App() {
       document.title = "Mayar Alharazi's Jolly Dolphin ~ ITIS 3135 ~ Website Evaluations";
     } else if (path === "/hobby") {
       document.title = "Mayar Alharazi's Jolly Dolphin ~ ITIS 3135 ~ Hobby";
+    } else if (path === "/slideshow") { // ✅ NEW
+      document.title = "Mayar Alharazi's Jolly Dolphin ~ ITIS 3135 ~ Slideshow";
     } else {
       document.title = "Mayar Alharazi's Jolly Dolphin ~ ITIS 3135";
     }
@@ -62,6 +65,7 @@ function App() {
         <Route path="/product" element={<Product />} />
         <Route path="/evaluations" element={<Evaluations />} />
         <Route path="/hobby" element={<Hobby />} />
+        <Route path="/slideshow" element={<Slideshow />} /> {/* ✅ NEW */}
       </Routes>
 
       <Footer />
