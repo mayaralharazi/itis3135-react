@@ -155,3 +155,29 @@ footer a {
   left: 10px;
   font-size: 12px;
 }
+.hobby-nav {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.hobby-nav button {
+  background-color: #8338ec;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  margin: 5px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.hobby-nav button:hover {
+  background-color: #3a86ff;
+}
+
+.hobby-section {
+  background: rgba(244, 241, 222, 0.8);
+  border: 2px solid rgba(43, 45, 66, 0.15);
+  border-radius: 14px;
+  padding: 18px;
+}
