@@ -1,5 +1,13 @@
 import { useState } from "react";
 
+import img1 from "../assets/sample1.jpg";
+import img2 from "../assets/sample2.jpg";
+import img3 from "../assets/sample3.jpg";
+import img4 from "../assets/sample4.jpg";
+import img5 from "../assets/sample5.jpg";
+import img6 from "../assets/sample6.jpg";
+import img7 from "../assets/sample7.jpg";
+
 function Hobby() {
   const [page, setPage] = useState("what");
 
@@ -32,6 +40,11 @@ function Hobby() {
             <li>I like the soft and nostalgic look of instant photos.</li>
             <li>I enjoy photographing travel, friends, and small details.</li>
           </ul>
+          <figure>
+            <img src={img1} alt="A sample instant photography image" />
+            <figcaption>Instant Photography Setup</figcaption>
+            <p className="ai-note">AI prompt used: photorealistic photo of an instant camera on a desk with soft lighting, warm tones, clean composition</p>
+          </figure>
         </section>
       )}
 
@@ -45,6 +58,11 @@ function Hobby() {
             <li>Travelers can use it to save memories.</li>
             <li>Creative people can enjoy the artistic side of it.</li>
           </ul>
+          <figure>
+            <img src={img2} alt="A sample portrait-style instant photography image" />
+            <figcaption>People Who Enjoy Instant Photography</figcaption>
+            <p className="ai-note">AI prompt used: photorealistic street photo, soft background blur, natural light, calm mood, instant photography style</p>
+          </figure>
         </section>
       )}
 
@@ -58,6 +76,11 @@ function Hobby() {
             <li>Morning light makes photos look fresh and calm.</li>
             <li>Cloudy weather helps avoid harsh shadows.</li>
           </ul>
+          <figure>
+            <img src={img3} alt="A sample sunset instant photo" />
+            <figcaption>Best Time for Instant Photos</figcaption>
+            <p className="ai-note">AI prompt used: photorealistic sunset scene, warm glow, soft clouds, peaceful atmosphere, instant photo look</p>
+          </figure>
         </section>
       )}
 
@@ -71,6 +94,11 @@ function Hobby() {
             <li>Campus has many nice study and walking areas.</li>
             <li>City streets add texture and character to photos.</li>
           </ul>
+          <figure>
+            <img src={img4} alt="A sample city instant photography image" />
+            <figcaption>Favorite Places for Instant Photography</figcaption>
+            <p className="ai-note">AI prompt used: photorealistic city street photo, interesting buildings, natural lighting, instant film style</p>
+          </figure>
         </section>
       )}
 
@@ -84,6 +112,11 @@ function Hobby() {
             <li>Test different angles before taking the photo.</li>
             <li>Use natural light when possible.</li>
           </ul>
+          <figure>
+            <img src={img5} alt="A sample instant photography workspace" />
+            <figcaption>How I Practice Photography</figcaption>
+            <p className="ai-note">AI prompt used: photorealistic camera and laptop photo editing workspace, neat desk setup, soft light</p>
+          </figure>
         </section>
       )}
 
@@ -97,19 +130,32 @@ function Hobby() {
             <li>It makes everyday moments feel more special.</li>
             <li>It gives me a creative hobby outside of schoolwork.</li>
           </ul>
+          <figure>
+            <img src={img6} alt="A photo of a camera in hands" />
+            <figcaption>Why Instant Photography Matters to Me</figcaption>
+            <p className="ai-note">AI prompt used: photorealistic hands holding an instant camera, shallow depth of field, soft light</p>
+          </figure>
         </section>
       )}
 
       {page === "ai" && (
         <section className="hobby-section">
           <h3>AI Prompts</h3>
-          <p><strong>AI model used:</strong> ChatGPT. I used ChatGPT to help organize the structure of this hobby page, improve the wording, design the HTML layout, suggest CSS styling, and assist with the JavaScript.</p>
+          <p><strong>AI model used:</strong> ChatGPT. I used ChatGPT to help organize the structure of this hobby page, improve the wording of the content, design the HTML layout, suggest CSS styling, and assist with the JavaScript that hides and shows sections when navigation links are clicked.</p>
+          <p>AI was also used to help generate prompts for the images so that the photos would have a consistent photorealistic style related to instant photography.</p>
+          <h3>Prompts Used</h3>
           <ul>
             <li>Create a single-page hobby website using HTML with sections for What, Who, When, Where, How, Why, and AI Prompts.</li>
             <li>Write simple student-style paragraphs explaining an instant photography hobby.</li>
             <li>Create JavaScript that hides all sections except the one selected in the navigation menu.</li>
-            <li>Help create embedded CSS styling that follows CRAP design principles.</li>
+            <li>Help create embedded CSS styling that follows CRAP design principles with a clean color scheme.</li>
+            <li>Generate photorealistic image prompts related to instant photography.</li>
           </ul>
+          <figure>
+            <img src={img7} alt="Photography themed collage image" />
+            <figcaption>AI Inspiration Board</figcaption>
+            <p className="ai-note">AI prompt used: photorealistic collage of instant camera gear with soft lighting and warm tones</p>
+          </figure>
         </section>
       )}
     </main>
