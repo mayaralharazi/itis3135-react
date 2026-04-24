@@ -5,6 +5,7 @@ function Navbar() {
     <nav>
       <Link to="/">Home</Link> |{" "}
       <Link to="/contract">Contract</Link> |{" "}
+      <Link to="/slideshow">Slideshow</Link> |{" "}
       <Link to="/survey">Survey</Link> |{" "}
       <Link to="/cards">Cards</Link> |{" "}
       <Link to="/inventory">Inventory</Link> |{" "}
