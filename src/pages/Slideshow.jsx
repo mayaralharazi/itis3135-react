@@ -5,14 +5,12 @@ function Slideshow() {
   const [index, setIndex] = useState(0);
   const [playing, setPlaying] = useState(false);
 
-  // fetch images
   useEffect(() => {
     fetch("https://api.thecatapi.com/v1/images/search?limit=10")
       .then((res) => res.json())
       .then((data) => setImages(data));
   }, []);
 
-  // play slideshow
   useEffect(() => {
     let interval;
 
@@ -29,27 +27,30 @@ function Slideshow() {
 
   return (
     <main>
-      <h2>Slideshow</h2>
+      <h2 style={{ textAlign: "center", color: "#d63384" }}>Slideshow</h2>
 
-      <img
-        src={images[index].url}
-        alt="cat"
-        style={{ width: "300px", borderRadius: "10px" }}
-      />
+      <div style={{ textAlign: "center" }}>
+        <img
+          src={images[index].url}
+          alt="cat"
+          style={{
+            width: "350px",
+            borderRadius: "15px",
+            boxShadow: "0 4px 10px rgba(0,0,0,0.2)"
+          }}
+        />
+      </div>
 
-      <div style={{ marginTop: "15px" }}>
-        <button onClick={() => setIndex(0)}>First</button>
-        <button onClick={() => setIndex((index - 1 + images.length) % images.length)}>
-          Previous
-        </button>
-        <button onClick={() => setIndex((index + 1) % images.length)}>
-          Next</button>
-        <button onClick={() => setIndex(images.length - 1)}>Last</button>
+      <div style={{ textAlign: "center", marginTop: "20px" }}>
+        <button className="slide-btn" onClick={() => setIndex(0)}>First</button>
+        <button className="slide-btn" onClick={() => setIndex((index - 1 + images.length) % images.length)}>Previous</button>
+        <button className="slide-btn" onClick={() => setIndex((index + 1) % images.length)}>Next</button>
+        <button className="slide-btn" onClick={() => setIndex(images.length - 1)}>Last</button>
 
         <br /><br />
 
-        <button onClick={() => setPlaying(true)}>Play</button>
-        <button onClick={() => setPlaying(false)}>Stop</button>
+        <button className="slide-btn play" onClick={() => setPlaying(true)}>Play</button>
+        <button className="slide-btn stop" onClick={() => setPlaying(false)}>Stop</button>
       </div>
     </main>
   );
